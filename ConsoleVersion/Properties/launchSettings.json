@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleVersion": {
+      "commandName": "Project",
+      "commandLineArgs": "100"
+    }
+  }
+}
