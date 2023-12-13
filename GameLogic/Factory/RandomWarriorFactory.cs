@@ -16,9 +16,9 @@ namespace GameLogic.Factory
                 case 0:
                     return new Swordsman();
                 case 1:
-                    return new Bowman();
+                    return new Archer();
                 case 2:
-                    return new Horseman();
+                    return new Knight();
                 default:
                     throw new InvalidOperationException("Unexpected value.");
             }

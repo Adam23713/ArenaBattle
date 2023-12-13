@@ -72,23 +72,23 @@ namespace GameLogic.Manager
             {
                 defender.Dead = true;
             }
-            else if(defender is Bowman)
+            else if(defender is Archer)
             {
                 defender.Dead = true;
             }
         }
 
-        private void BowmanAttack(Warrior attacker, Warrior defender)
+        private void ArcherAttack(Warrior attacker, Warrior defender)
         {
             if (defender is Swordsman)
             {
                 defender.Dead = true;
             }
-            else if (defender is Bowman)
+            else if (defender is Archer)
             {
                 defender.Dead= true;
             }
-            else if (defender is Horseman)
+            else if (defender is Knight)
             {
                 if(horsemanChance.Next(101) <= 40)
                 {
@@ -97,17 +97,17 @@ namespace GameLogic.Manager
             }
         }
 
-        private void HorsemanAttack(Warrior attacker, Warrior defender)
+        private void KnightAttack(Warrior attacker, Warrior defender)
         {
             if (defender is Swordsman)
             {
                 attacker.Dead = true;
             }
-            else if (defender is Bowman)
+            else if (defender is Archer)
             {
                 defender.Dead = true;
             }
-            else if (defender is Horseman)
+            else if (defender is Knight)
             {
                 defender.Dead = true;
             }
@@ -161,13 +161,13 @@ namespace GameLogic.Manager
                 {
                     SwordsmanAttack(attacker, defender);
                 }
-                else if (attacker is Bowman)
+                else if (attacker is Archer)
                 {
-                    BowmanAttack(attacker, defender);
+                    ArcherAttack(attacker, defender);
                 }
-                else if (attacker is Horseman)
+                else if (attacker is Knight)
                 {
-                    HorsemanAttack(attacker, defender);
+                    KnightAttack(attacker, defender);
                 }
 
                 ReduceHealthPointIfNeed(attacker);

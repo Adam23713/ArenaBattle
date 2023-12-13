@@ -2,14 +2,14 @@
 
 namespace GameLogic.Model
 {
-    public sealed class Bowman : Warrior
+    public sealed class Archer : Warrior
     {
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
-        public Bowman() : base()
+        public Archer() : base()
         {
             HP = MaximumHP = 100;
-            Name = $"ID:{ID} Bowman";
+            Name = $"ID:{ID} Archer";
             logger.Debug($"{Name} is created");
         }
     }
