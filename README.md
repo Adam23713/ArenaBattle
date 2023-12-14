@@ -3,19 +3,24 @@
 In the arena, N heroes are battling, who can be archers, knights, and swordsmen. Each hero has an identifier and health, and they can attack and defend according to the rules below.
 
 - **Archer attacks:**
-  ![archman](https://github.com/Adam23713/ArenaBattle/assets/12465316/1fdcbb4f-1886-4aab-84f1-8b8ac0d0e2c1)
+  
+  ![archman300](https://github.com/Adam23713/ArenaBattle/assets/12465316/a4efb20f-c160-4de7-abc4-79ea0c6df338)
   - Knight: 40% chance the knight dies, 60% chance it is avoided
   - Swordsman: the swordsman dies
   - Archer: defending archer dies
 
+
 - **Swordsman attacks:**
- ![hourseman](https://github.com/Adam23713/ArenaBattle/assets/12465316/28ed8e7c-ef18-428b-ad7a-ed63d07869b2)
+ 
+ ![swordsman_300](https://github.com/Adam23713/ArenaBattle/assets/12465316/576c2cc3-91a7-43b8-8d63-f1e306612d25)
   - Knight: nothing happens
   - Swordsman: defending swordsman dies
   - Archer: archer dies
 
+
 - **Knight attacks:**
- ![knight](https://github.com/Adam23713/ArenaBattle/assets/12465316/2e2d1f9d-5034-4677-b46c-a6767eef94ad)
+  
+ ![knight_300](https://github.com/Adam23713/ArenaBattle/assets/12465316/b5825460-d136-44e6-b4e0-697b1bb0afec)
   - Knight: defending knight dies
   - Swordsman: knight dies
   - Archer: archer dies
