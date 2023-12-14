@@ -9,12 +9,18 @@ namespace ConsoleVersion
         public static bool IsValidIntNumber(string userInput, out int result)
         {
             bool isValid = false;
-            if (IsNumeric(userInput, out result))
+            long number;
+            result = 0;
+            if (long.TryParse(userInput, out number))
             {
-                isValid = result >= int.MinValue && result <= int.MaxValue;
+                isValid = number >= int.MinValue && number <= int.MaxValue;
                 if (!isValid)
                 {
                     logger.Error($"{userInput} is not in the range ({int.MinValue} - {int.MaxValue})");
+                }
+                else
+                {
+                    result = (int)number;
                 }
             }
             else
@@ -23,12 +29,6 @@ namespace ConsoleVersion
             }
             return isValid;
         }
-
-        private static bool IsNumeric(string input, out int result)
-        {
-            return int.TryParse(input, out result);
-        }
-
     }
 }
 
